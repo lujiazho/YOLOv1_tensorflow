@@ -56,7 +56,7 @@ DECAY_RATE = 0.1
 # 当STAIRCASE为True，（global_step/decay_steps）则被转化为整数, 因此衰减是突变的，整个衰变过程成阶梯状
 STAIRCASE = True
 # batch size
-BATCH_SIZE = 45
+BATCH_SIZE = 16
 # 训练迭代次数，一个epoch包含 [labels_num / batch_size] 个iters
 MAX_ITER = 1500
 # 多少迭代总结一次训练日志信息，这个信息是记录到了tensorboard的文件里
