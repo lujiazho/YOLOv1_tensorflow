@@ -149,8 +149,8 @@ class pascal_voc(object):
         return gt_labels
 
     # 读取单张图片的label，从xml文件加载image和bounding boxes的信息
-    def load_pascal_annotation(self, img_name):
-        img_name = os.path.join(self.data_path, 'JPEGImages', img_name + '.jpg')
+    def load_pascal_annotation(self, index):
+        img_name = os.path.join(self.data_path, 'JPEGImages', index + '.jpg')
         im = cv2.imread(img_name)
         # 计算缩放比例
         h_ratio = 1.0 * self.image_size / im.shape[0]
@@ -159,7 +159,7 @@ class pascal_voc(object):
 
         # ground truth的label
         label = np.zeros((self.cell_size, self.cell_size, 25))
-        filename = os.path.join(self.data_path, 'Annotations', img_name + '.xml')
+        filename = os.path.join(self.data_path, 'Annotations', index + '.xml')
         # 输入文件名，并解析xml文件
         tree = ET.parse(filename)
         # 获取该图片的所有object信息
