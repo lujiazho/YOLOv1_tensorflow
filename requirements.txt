@@ -1,0 +1,7 @@
+# pip install -r requirements.txt
+
+# base ----------------------------------------
+Cython
+tensorflow==1.15
+numpy
+opencv-python
