@@ -2,7 +2,9 @@
 2016年[YOLO](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf)实现，包含所有源码注释并解决一些原作者编码中的bug
 
 ## Requirements
-未完待续
+```Shell
+$ pip install -r requirements.txt
+```
 
 ## Installation
 1. Clone yolo_tensorflow repository
