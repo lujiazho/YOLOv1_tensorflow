@@ -17,9 +17,9 @@ FILE_ID='0B5aC8pI-akZUNVFZMmhmcVRpbTA'
 echo "Downloading YOLO_small.ckpt..."
 curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=$FILE_ID" > /dev/null
 CODE="$(awk '/_warning_/ {print $NF}' /tmp/cookie)"  
-curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CODE}&id=$FILE_ID" -o ./data/weights/$FILE_NAME
+curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CODE}&id=$FILE_ID" -o ./weights/$FILE_NAME
 
 echo "Extracting YOLO_small checkpoint..."
-tar -zxvf ./data/weights/YOLO_small.tar.gz -C ./data/weights
+tar -zxvf ./weights/YOLO_small.tar.gz -C ./weights
 
 echo "Done."
