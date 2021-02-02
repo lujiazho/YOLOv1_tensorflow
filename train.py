@@ -158,6 +158,7 @@ if __name__ == '__main__':
     parser.add_argument('--gpu', default='', type=str)
     opt = parser.parse_args()
 
+    cfg.GPU = opt.gpu
     # 设置环境变量中的指定GPU设备，使之对tf可见，才能调用
     os.environ['CUDA_VISIBLE_DEVICES'] = cfg.GPU
 
