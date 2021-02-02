@@ -15,6 +15,8 @@ $ cd YOLOv1_tensorflow
 
 2. Download Pascal VOC dataset and YOLO_small.ckpt to correct catalogue automatically
 ```Shell
+# (if needed)
+# !chmod +x download_data.sh
 $ ./download_data.sh
 ```
 where YOLO_small.ckpt file will be pt in `data/weights`
