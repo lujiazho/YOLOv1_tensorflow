@@ -1,6 +1,9 @@
 # YOLO_tensorflow
 2016年[YOLO](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf)实现，包含所有源码注释并解决一些原作者编码中的bug
 
+## Demo Show
+<img src="https://github.com/leaving-voider/YOLOv1_tensorflow/blob/main/test/detected.jfif" width = "640" height = "423" alt="" align=center />
+
 ## Requirements
 ```Shell
 $ pip install -r requirements.txt
@@ -36,5 +39,5 @@ $ python train.py
 
 2. Test
 ```Shell
-$ python test.py --weights ./data/weights/YOLO_small.ckpt --img ./images/emotion.jpg
+$ python test.py --weights ./data/pascal_voc/output/2021_02_02_07_43/weights/yolo.ckpt-15 --img ./images/emotion.jpg
 ```
